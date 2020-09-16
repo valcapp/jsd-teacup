@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Cup</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/style.css">
+    <script src="public/lib/Chart.min.js"></script>
+    <script src="public/lib/plotly.min.js"></script>
+</head>
+<body>
+
+    <div>
+        <h1>Teacup Temperature</h1>
+
+        <div id="slidersBar" style="display:flex;">
+            <div>
+                <label for="roomTemperature">Room Temperature</label><br>
+                <input type="range" class="model-param" name="roomTemperature">
+            </div>
+            <div>
+                <label for="initialCupTemperature">Initial Cup Temperature</label><br>
+                <input type="range" class="model-param" name="initialCupTemperature">
+            </div>
+            <div>
+                <label for="coolingTime">Cooling Time</label><br>
+                <input type="range" class="model-param" name="coolingTime">
+            </div>
+            <div>
+                <label for="finalTime">Final Time</label><br>
+                <input type="range" class="model-param" name="finalTime" step="1">
+            </div>
+
+            
+        </div>
+
+        <div id="theChart">
+            <!-- <canvas class="canvas" name="cupTemperature" width="400" height="400"></canvas>
+            <canvas class="canvas" name="temperatureChange" width="400" height="400"></canvas> -->
+        </div>
+    </div>
+
+    <script src="public/v2/sd.js"></script>
+    <script src="public/v2/model.js"></script>
+    <!-- <script src="simpler.js"></script> -->
+    <script src="public/v2/io.js"></script>
+    
+</body>
+</html>
